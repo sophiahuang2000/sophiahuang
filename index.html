@@ -3,67 +3,140 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Give Me a Title!</title>                           <!-- Give Title -->
+    <title>About Sophia Huang</title>                           <!-- Give Title -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">  <!-- Insert StyleSheet -->
     <link rel="icon" href="cool-icon.png">                    <!-- Insert Icon -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-	<!--nav-list
-		.welcome
-		.about me
-		.student orgs
-		.work experience
-		.my crafts
-		.my foods
-		.resume
-		.contact me-->
-
-<body bgcolor= lightBlue>
-	<style type= "text/css">
-		.textbottom {vertical-align:text-bottom;}
+		
+<body class="background" bgcolor="white">
 
 
+
+	<style type='text/css'>
+		
+		/*background*/
+		/*.background {
+			background-image: url("backgroundpic.png");
+			background-size:cover;
+			margin: 0;*/
 		}
+
+		.parallax-img {
+			position: relative;
+			opacity: 0.65;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: repeat;
+			background-size: cover;
+		
+		}
+		.textbottom {vertical-align:text-bottom;
+		}
+
 		.nav-bar{
 			width: 100%;
 			height: 50px;
 			margin: 0;
+			background: black;
 		}
-		.nav-bar > .element {
-			width: 19.5%;
-			line-height: 50px;
+		.element {
+			width: 18%;
 			text-align: center;
 			color: white;
 			display: inline-block;
 			margin: 0;
 			font-family: Arial;
 			text-decoration: none;
+			background-color: black;
+			vertical-align: top;
+			max-height: 20px;
+			overflow: hidden;
 		}
 
-		.nav-bar > .element:hover { 
-  			text-decoration: underline;
+		.element:hover { 
+  			max-height: 1000px;
+		}
+
+		.subElement {
+
+			text-decoration: none;
+			width: 100%;
+			display: block;
+			height: 20px;
+			color: white;
 		}	
+
+		.subElement:hover {
+			text-decoration: underline;
+		}
 
 		.upperCenterText{
 			text-align: center; 
-			color: white;
+			color: black;
 			font-size: 20px;
 		}
 		.img_profilePicture{
 			width: 200px;
-			margin-left: 200px;
-			vertical-align:text-bottom;
+			margin-left: 100px;
+			float: left;
+			border-radius: 50%;
+			text-align: left
 		}
+
 		.p_AboutMe{
-			color: white;
-			font-size: 20px;
-			margin-right: 200px;
-			margin-left: 410px;
+			color: black;
+			font-size: 14px;
+			display: inline-block;
+			font-family: Arial;
+			width: calc(100% - 600px);
+			padding-right: 50px;
+			line-height: 1.5;
+			padding-left: 80px;
+			padding-top: -5px;
+
+		}
+		.p_Email{
+			color: black;
+			font-size: 14px;
+			display: inline-block;
+			font-family: Arial;
 			line-height: 1;
 		}
-		.iFrameLinkedin{
+		.p_ContactMe{
+			color: black;
+			font-size: 14px;
+			display: inline-block;
+			font-family: Arial;
+			width: calc(100% - 600px);
+			padding-right: 50px;
+			line-height: 1.5;
+			padding-left: 380px;
+			padding-top: -5px;
+
+		}
+		.img_gmailIcon{
+			margin-left:50px
+			width: 20px;
+			max-width: 20px;
+			float: left;
+			padding-left: 80px;
+			text-align:left;
+		}
+		.p_Contact{
+			color: black;
+			font-size: 16px;
+			display: inline-block;
+			padding-right: 100px;
+			font-family: Arial;
+			max-height: 100% - 10px;
+
+		}
+		.iframeResume{
 			text-align: center;
+			min-width: 80%;
+			min-height: 500px;
 		}
 		
 		.dropdown-list {
@@ -72,7 +145,7 @@
 		}
 		/* Dropdown Button */
 		.dropbtn {
-		  background-color: lightblue;
+		  background-color: blue;
 		  color: white;
 		  padding: 16px;
 		  font-size: 16px;
@@ -109,50 +182,119 @@
 
 		/* Change the background color of the dropdown button when the dropdown content is shown */
 		.dropdown:hover .dropbtn {background-color: red;}
+
+		}
+		.img_HabitatPictures{
+			margin-left:50px
+			width: 200px;
+			max-width: 200px;
+			float: left;
+			padding-left: 80px;
+			text-align:left;
+		}
+		box-sizing: border-box; /*referenced w3schools website */
+		}
+
+		body {
+		  margin: 0;
+		  font-family: Arial;
+		}
+
+		.header {
+		  text-align: center;
+		  padding: 20px;
+		}
+
+		.column {
+		  float: right;
+		  width: 20%;
+		  padding: 10px;
+		}
+
+		.column img {
+		  margin-top: 12px;
+		}
+
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
 </body></html>
 	</style>
-	<div class=nav-bar>
-    	<a href='index.html' class=element> About Me </a>
-    	<a href='index.html' class=element> Campus Involvement </a>
-    	<a href='index.html' class=element> Work Experience </a>
-    	<a href='index.html' class=element> Volunteer Experience </a>
-    	<a href='index.html' class=element> My Crafts </a>
-    	<a href='index.html' class=element> My Foods </a>
-    	<a href='index.html' class=element> Resume </a>
-    	<a href='index.html' class=element> Contact </a>
+	<div class=parallax-img style='background-image: url(bluebackgroundpic.png); height: 100%;'></div>
 
-    </div>
-	
+	<div class=nav-bar>
+    	<div class=element>
+    		<a href='index.html' class='subElement'> About Me </a>
+    	</div>
+    	<div class=element>
+    		<a href='index.html' class='subElement'> My Experiences </a>
+    		<a href='index.html' class='subElement'> Work Experience  </a>
+    		<a href='index.html' class='subElement'> Campus Involvements </a>
+    		<a href='index.html' class='subElement'> Volunteer Experience </a>
+    	</div>
+    	<div class=element>
+    		<a href='index.html' class='subElement'> My Hobbies </a>
+    		<a href='index.html' class='subElement'> Making Crafts  </a>
+    		<a href='index.html' class='subElement'> Macking Food</a>
+    	</div>
+    	<div class=element>
+    		<a href='https://docs.google.com/document/d/1UJnUh-URkZy4iNloDUnaWNSODVTdPmtLvmUs6B4uuaw/edit?usp=sharing' target='_blank' class='subElement'> My Resume </a>
+    	</div>
+    	<div class=element>
+    		<a href='https://www.linkedin.com/in/sophia-h-17a550138/' target='_blank' class='subElement'> My LinkedIn </a>
+    	</div>
+
+    </div>	
+
+
+
+</body>
 	<p class=upperCenterText> Welcome here! </p>
 
     <img class=img_profilePicture src='Soap_Pic.jpg'>
-    <p class=p_AboutMe> Hello, my name is Sophia Huang. I am a sophmore at Carnegie Mellon University studying Business Administration and Policy & Management. I am from New York City but currently reside in Pittsburgh, PA. I had the privilege to work as a Finance Intern, Administrative Assistant, Program Support, Data Analyst Intern, Teacher's Assistant, Campus Co-Founder, and many other positions. I am heavily imvolved in service work and is currently the president of the student organization, Habitat for Humanity, on campus. I am also involved in many other student organizations. In my free time, I like to bike, cook, make origami, hike, and play frisbee. I also enjoy finding new dessert places and meeting new people. </p>
 
-    <script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
-    <iframe class=iFrameLinkedin src="https://www.linkedin.com/in/sophia-h-17a550138/"></iframe>
+    <p class=p_AboutMe> Hello, </p>
 
-	</div class="dropdown-list">
-		<div class="dropdown" id=AboutMe>
-	  		<p class="dropbtn">About Me</p>
-	  	<div>
-		<div class="dropdown"id=Experience>
-	  		<p class="dropbtn">My Experiences</p>
-	  		<div class="dropdown-content">
-	  			<a >"Work"
-	    		<a >"CampusInvolvement"
-	    		<a >"Volunteer"
-	 	<div>
-			<div class="dropdown"id=MyHobbies>
-	 		 <p class="dropbtn">My Hobbies</p>
-	  	<div class="dropdown-content">
-	  		<a >"Making Crafts"
-	    	<a >"Making Food"
-	  	<div>	
-		<div class="dropdown"id=contact>
-	  		<p class="dropbtn">Contact</p>
-	  	<div>				  		  	
+    <p class=p_AboutMe> My name is Sophia Huang. I am currently a sophmore at Carnegie Mellon University studying Business Administration and Policy & Management. I am from New York City but currently reside in Pittsburgh, PA. I really enjoy volunteering and love building homes with Habitat for Humanity. I actually had the chance to go on four Habitat for Humanity Alternative Break Trips with CMU Habitat and I co-led 3 of the 4. In my free time, I enjoy biking, playing frisbee, making different kinds of crafts and cooking/baking. </p>
+
+    <p class=p_AboutMe> </p>
+
+    <p class=p_ContactMe> Feel free to reach out and contact me. You can also check out my resume and LinkedIn page by clicking on the buttons at the top of the page. Below are some of the pictures taken during my Habitat for Humanity trips. I also attached my resume below.</p>
+
+
+    <p class=p_Email>sophiahuang2022@gmail.com</p>
+
+    <img class=img_gmailIcon src='Gmail_Icon.png'>
+
+	<div class="header">
+	  <h1>Habitat Pictures</h1>
 	</div>
 
+	<div class="row">
+	  <div class="column">
+	  <img src="image1.jpeg" style="width:100%">
+	  <img src="image2.jpeg" style="width:100%">
+	  </div>
+	  <div class="column">
+	  <img src="image3.jpeg" style="width:100%">
+	  <img src="image4.jpeg" style="width:100%">
+	  </div>
+	  <div class="column">
+	  <img src="image5.jpeg" style="width:100%">
+	  <img src="image6.jpeg" style="width:100%">
+	  </div>
+	  <div class="column">
+	  <img src="image7.jpeg" style="width:100%">
+	  <img src="image8.jpeg" style="width:100%">
+	  </div> 
+	</div>
+
+    <div class=parallax-img style='background-image: url(bluebackgroundpic.png); height: 100%;'></div>
+
+    <iframe class=iframeResume src="https://docs.google.com/document/d/e/2PACX-1vTzsvNLIWW77lhE4n7cvtMo88sA49DO9WemCqF8AMd99NVrlkFOzKRv5nAbA4Wng5r3RItwDYS_kZXx/pub?embedded=true"></iframe>
 	</style>
 
 
